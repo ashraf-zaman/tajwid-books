@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:gravity="center_vertical"
+    tools:context="com.codelab.tajwidbooks.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/adView"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Button_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="মাখরাজ"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Button_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="নুন সাকিন ও তানভিনের বিবরন"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Button_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="মীম সাকিন ও তানভিনের বিবরন"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Button_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="আল্লাহ শব্দ পড়ার নিয়ম"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Button_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="কলকলার বিবরন"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Button_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="গুন্নার প্রকার ভেদ "
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+
+            <Button
+                android:id="@+id/Button_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="মদ্দের বিবরন"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/Button_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_transparent"
+                android:padding="25dp"
+                android:text="-র- হরফ পড়ার নিয়ম"
+                android:textColor="#ffffff"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5572020507306655/8147900918"/>
+
+</RelativeLayout>
+
+

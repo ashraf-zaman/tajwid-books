@@ -32,7 +32,7 @@
                 android:padding="25dp"
                 android:text="মাখরাজ"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <Button
                 android:id="@+id/Button_2"
@@ -41,9 +41,9 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_transparent"
                 android:padding="25dp"
-                android:text="নুন সাকিন ও তানভিনের বিবরন"
+                android:text="নুন সাকিন ও তানভিনের বিবরণ"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/Button_3"
@@ -52,9 +52,9 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_transparent"
                 android:padding="25dp"
-                android:text="মীম সাকিন ও তানভিনের বিবরন"
+                android:text="মীম সাকিন ও তানভিনের বিবরণ"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="19sp" />
 
             <Button
                 android:id="@+id/Button_7"
@@ -65,7 +65,7 @@
                 android:padding="25dp"
                 android:text="আল্লাহ শব্দ পড়ার নিয়ম"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <Button
                 android:id="@+id/Button_4"
@@ -74,9 +74,9 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_transparent"
                 android:padding="25dp"
-                android:text="কলকলার বিবরন"
+                android:text="কলকলার বিবরণ"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <Button
                 android:id="@+id/Button_5"
@@ -85,9 +85,9 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_transparent"
                 android:padding="25dp"
-                android:text="গুন্নার প্রকার ভেদ "
+                android:text="গুন্নার প্রকার ভেদ"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
 
             <Button
@@ -97,9 +97,9 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_transparent"
                 android:padding="25dp"
-                android:text="মদ্দের বিবরন"
+                android:text="মদ্দের বিবরণ"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <Button
                 android:id="@+id/Button_8"
@@ -110,7 +110,7 @@
                 android:padding="25dp"
                 android:text="-র- হরফ পড়ার নিয়ম"
                 android:textColor="#ffffff"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
         </LinearLayout>
 

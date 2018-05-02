@@ -46,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                invokeViewer("makhraj.pdf");
+                invokeViewer("makhraj.pdf", "মাখরাজ");
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
             }
         });
 
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("nun_cakin_o_tanvin.pdf");
+                invokeViewer("nun_cakin_o_tanvin.pdf", "নুন সাকিন ও তানভিনের বিবরণ");
             }
         });
 
@@ -63,14 +65,14 @@ public class MainActivity extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("mim_cakin_o_tanvin.pdf");
+                invokeViewer("mim_cakin_o_tanvin.pdf", "মীম সাকিন ও তানভিনের বিবরণ");
             }
         });
 
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("kol_kola.pdf");
+                invokeViewer("kol_kola.pdf", "কলকলার বিবরণ");
             }
         });
 
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("gunnar_prokar.pdf");
+                invokeViewer("gunnar_prokar.pdf", "গুন্নার প্রকার ভেদ");
             }
         });
 
@@ -86,14 +88,14 @@ public class MainActivity extends AppCompatActivity {
         f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("modder_biboron.pdf");
+                invokeViewer("modder_biboron.pdf", "মদ্দের বিবরণ");
             }
         });
 
         g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("rouls_of_allah_word.pdf");
+                invokeViewer("rouls_of_allah_word.pdf", "আল্লাহ শব্দ পড়ার নিয়ম");
             }
         });
 
@@ -101,25 +103,31 @@ public class MainActivity extends AppCompatActivity {
         h.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                invokeViewer("ruls_of_ro.pdf");
+                invokeViewer("ruls_of_ro.pdf","-র- হরফ পড়ার নিয়ম");
             }
         });
 
 
     }
 
-    private void invokeViewer(String pdfName) {
+    private void invokeViewer(String pdfName, String title) {
         Intent intent = new Intent(MainActivity.this, ViewerActivity.class);
         intent.putExtra("pdfName", pdfName);
+        intent.putExtra("title", title);
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         startActivity(intent);
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
-
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.menu_item,menu);
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         return true;
     }
 
@@ -127,11 +135,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_about:
-
                 if (mInterstitialAd.isLoaded()) {
                     mInterstitialAd.show();
                 }
-
                  Intent i10=new Intent(MainActivity.this,AboutActivity.class);
                  this.startActivity(i10);
                  return true;
